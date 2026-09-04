@@ -15,6 +15,8 @@ Every run either produces a timestamped `.tar.gz` in S3 or a clear `ERROR` line 
 
 ## Architecture
 
+![architecture](screenshots/architecture.png)
+
 ```mermaid
 flowchart LR
     CRON["cron<br/>0 0 * * * (root)"] --> SH["backup.sh"]
